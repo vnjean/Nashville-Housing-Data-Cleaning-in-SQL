@@ -27,7 +27,6 @@ The SQL Data Cleaning project for the NashvilleHousing dataset involved a compre
 7. **Delete Unused Columns:**
    - Removed unused columns, including OwnerAddress, TaxDistrict, PropertyAddress, and SaleDate, to streamline the dataset.
 
---
 
 ## Detailed Cleaning Steps
 
