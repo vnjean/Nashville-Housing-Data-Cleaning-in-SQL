@@ -1,10 +1,35 @@
-# SQL Data Cleaning - NashvilleHousing
+# Summary
 
-## Introduction
+## Project Overview
 
-In this project, we focused on cleaning the NashvilleHousing dataset, which is available on GitHub and has been uploaded to this repository. The dataset encompasses various columns, including UniqueID, ParcelID, LandUse, PropertyAddress, SaleDate, SalePrice, LegalReference, SoldAsVacant, OwnerName, OwnerAddress, Acreage, TaxDistrict, LandValue, BuildingValue, TotalValue, YearBuilt, Bedrooms, FullBath, and HalfBath.
+The SQL Data Cleaning project for the NashvilleHousing dataset involved a comprehensive cleaning process to enhance data quality and prepare it for analysis. The dataset, comprising various columns such as UniqueID, ParcelID, SaleDate, SalePrice, and more, required several steps to standardize, enrich, and refine its content.
 
 ## Cleaning Steps
+
+1. **Standardize Date Format:**
+   - Converted the SaleDate column to a standardized date format.
+
+2. **Populate Missing Property Address Data:**
+   - Identified and filled missing PropertyAddress values through a self-join operation.
+
+3. **Break Down Address into Individual Columns:**
+   - Split PropertyAddress into Address and City columns, creating new fields for improved data organization.
+
+4. **Parse Owner Address into Individual Columns:**
+   - Utilized PARSENAME and REPLACE functions to break down OwnerAddress into Address, City, and State columns.
+
+5. **Change Y and N to Yes and No in "Sold as Vacant" Field:**
+   - Transformed the SoldAsVacant column values from 'Y' and 'N' to 'Yes' and 'No' using a CASE statement.
+
+6. **Remove Duplicates:**
+   - Implemented a Common Table Expression (CTE) with ROW_NUMBER() to identify and eliminate duplicate records based on specified criteria.
+
+7. **Delete Unused Columns:**
+   - Removed unused columns, including OwnerAddress, TaxDistrict, PropertyAddress, and SaleDate, to streamline the dataset.
+
+--
+
+## Detailed Cleaning Steps
 
 ### Standardize Date Format
 
