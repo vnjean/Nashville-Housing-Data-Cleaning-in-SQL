@@ -1,5 +1,3 @@
-Certainly! Here's a concise README for your GitHub project:
-
 # SQL Data Cleaning - NashvilleHousing
 
 This project focuses on cleaning and standardizing the NashvilleHousing dataset using SQL. The dataset includes columns such as UniqueID, ParcelID, LandUse, PropertyAddress, SaleDate, SalePrice, LegalReference, SoldAsVacant, OwnerName, OwnerAddress, Acreage, TaxDistrict, LandValue, BuildingValue, TotalValue, YearBuilt, Bedrooms, FullBath, and HalfBath.
