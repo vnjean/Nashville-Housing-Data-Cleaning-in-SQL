@@ -35,3 +35,83 @@ This project focuses on cleaning and standardizing the NashvilleHousing dataset 
 ### Repository Structure:
 
 - `NashvilleHousing.sql`: SQL script containing the data cleaning steps.
+
+
+
+
+Certainly, here's a refined version structured more closely to your original format:
+
+# SQL Data Cleaning - NashvilleHousing
+
+## Introduction
+
+In this project, we focused on cleaning the NashvilleHousing dataset, which is available on GitHub and has been uploaded to this repository. The dataset encompasses various columns, including UniqueID, ParcelID, LandUse, PropertyAddress, SaleDate, SalePrice, LegalReference, SoldAsVacant, OwnerName, OwnerAddress, Acreage, TaxDistrict, LandValue, BuildingValue, TotalValue, YearBuilt, Bedrooms, FullBath, and HalfBath.
+
+## Cleaning Steps
+
+### Standardize Date Format
+
+```sql
+-- Standardize Date Format
+select SaleDateConverted, CONVERT(Date, SaleDate)
+FROM PortfolioProject.dbo.NashvilleHousing
+```
+
+### Populate Property Address Data
+
+```sql
+-- Populate Property Address data
+-- [Your SQL Code Here]
+```
+
+### Breaking out Address into Individual Columns (Address, City, State)
+
+```sql
+-- Breaking out Address into Individual Columns (Address, City, State)
+-- [Your SQL Code Here]
+```
+
+### Parsing Owner Address into Individual Columns (Address, City, State)
+
+```sql
+-- Parsing Owner Address into Individual Columns (Address, City, State)
+-- [Your SQL Code Here]
+```
+
+### Change Y and N to Yes and No in "Sold as Vacant" Field
+
+```sql
+-- Change Y and N to Yes and No in "Sold as Vacant" field
+-- [Your SQL Code Here]
+```
+
+### Remove Duplicates
+
+```sql
+-- Remove Duplicates
+-- [Your SQL Code Here]
+```
+
+### Delete Unused Columns
+
+```sql
+-- Delete Unused Columns
+-- [Your SQL Code Here]
+```
+
+### Delete Unused Column
+
+```sql
+-- Delete Unused Column
+-- [Your SQL Code Here]
+```
+
+## Usage
+
+Execute the SQL queries in the provided order to clean and standardize the NashvilleHousing dataset.
+
+## Repository Structure
+
+- `NashvilleHousing.sql`: SQL script containing the data cleaning steps.
+
+Feel free to customize this README to match your style and provide any additional details about the project.
